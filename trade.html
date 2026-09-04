@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Trade Room</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="left">
+      <h2>Trade Status</h2>
+      <div id="phase">Phase 1: Payment Escrow</div>
+      <button onclick="depositFunds()">Deposit Funds</button>
+      <button onclick="releaseFunds()">Verify & Release</button>
+    </div>
+    <div class="right">
+      <h2>Chat</h2>
+      <div id="chat"></div>
+      <input id="msg" placeholder="Type message...">
+      <button onclick="sendMessage()">Send</button>
+
+      <h2>Credentials</h2>
+      <input type="password" id="cred" placeholder="Enter PUBG ID/Pass">
+      <button onclick="toggleMask()">Mask/Unmask</button>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
